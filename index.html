@@ -196,6 +196,19 @@ body > *:not(.pbg){position:relative;z-index:2;}
 </head>
 <body>
 <style>
+  <style>
+.pbg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.pbg img{position:absolute;width:100%;height:120%;object-fit:cover;filter:brightness(0.3) saturate(0.7) blur(2px);opacity:0.4;animation:bgScroll 25s linear infinite;}
+@keyframes bgScroll{0%{transform:translateY(0)}100%{transform:translateY(-15%)}}
+#hero,#galeri,#program,#konum,#davet,#iletisim,footer,.section-wrap,section{position:relative;z-index:2;}
+#program,#davet{background:rgba(255,255,255,0.92) !important;backdrop-filter:blur(8px);}
+#davet{background:rgba(28,24,20,0.95) !important;}
+.hero-date{font-size:16px !important;letter-spacing:0.5em !important;}
+.tl-content h3{color:#1a1a1a !important;font-size:26px !important;}
+.tl-content p{color:#333 !important;font-size:14px !important;}
+.section-title{color:#1a1a1a !important;}
+.section-text{color:#2c2c2c !important;font-size:15px !important;}
+</style>
 .corner-decoration {
   position: absolute;
   width: 260px;
